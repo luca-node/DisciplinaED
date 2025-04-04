@@ -2,9 +2,9 @@
 
 int main(){
 
-    int f=1;      // fatorial
-    int n = 0;
-    int inp = 0;
+    int f=1;      // fatorial support
+    int n = 0;    // factorial number
+    int inp = 0;  // unmodified start value
 
     //catch data?
     printf("please insert factorial number:");
