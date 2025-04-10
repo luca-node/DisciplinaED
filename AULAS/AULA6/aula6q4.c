@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-void imprime(int n);
+int imprime(int n);
 
 int main (void) {
-
 
     imprime(1);
 
@@ -11,7 +10,7 @@ int main (void) {
 
 }
 
-void imprime(int n){
+int imprime(int n){
 
     if(n==0){
         return 1;

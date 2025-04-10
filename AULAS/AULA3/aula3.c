@@ -2,24 +2,18 @@
 
 int main(){
 
-    int f;      // number in feet
-    float inc;  // number in inches
-    float m;    // height in meters
+    int feet; // meters converted to feet
+    float inches; // inches remainder of feet 
+    float meters; // meter input from user
 
+    printf("please input height in meters: \n");
+    scanf("%f", &meters);
 
-    //catch data?
-    printf("please insert height in meters:");
-    scanf("%f", &m);
+    meters = meters * 100; // meter to centimeter conversion
+    feet = (int)(meters/30.48); // converts height(meter) into height(feet)
+    inches = ((meters-feet*30.48) / 2.54); // multiplies the value of feet by 30.48 to get the value of inches and deduces meters from it, then divides it by 2.54
 
-    
-    // *** calculates height in imperial units ***
-    
-    m = m*100;  // meter to centimeter conversion
-    f = (int)(m/30.48); // calculates height in feet
-    inc = (m-f*30.48) / 2.54; // calculates remainder as inches
-
-    printf("Height in imperial units: %dft and %.1f inches\n", f, inc);
+    printf("Height in imperial units is: %dft and %.1f inches", feet, inches);
 
     return 0;
-
 }

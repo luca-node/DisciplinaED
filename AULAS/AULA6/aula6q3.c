@@ -5,7 +5,7 @@ void imprime(int n);
 int main (void) {
 
 
-    imprime(1);
+    imprime(5);
 
     return 0;
 
