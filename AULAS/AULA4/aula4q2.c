@@ -2,20 +2,20 @@
 
 int main(){
 
-    int f=1;      // fatorial
-    int n = 0;
-    int inp = 0;
+    int factorialCounter=1;      // fatorial
+    int factorialNumber = 0;
+    int factorialInput = 0;
 
     //catch data?
-    printf("please insert factorial number:");
-    scanf("%d", &n);
+    printf("please insert factorial number:\n");
+    scanf("%d", &factorialNumber);
 
-    f = n;
-    inp = n;
+    factorialCounter = factorialNumber;
+    factorialInput = factorialNumber;
 
-    for (int i = f; i > 1; i--){
-        n*=f-1;
-        f--;
+    for (int i = factorialCounter; i > 1; i--){
+        factorialNumber*=factorialCounter-1;
+        factorialCounter--;
     }
 
    /* while (f > 1) {
@@ -23,7 +23,7 @@ int main(){
         f--;
     }*/
 
-    printf("O fatorial de %d eh: %d", inp, n);
+    printf("O fatorial de %d eh: %d", factorialInput, factorialNumber);
 
     return 0;
 

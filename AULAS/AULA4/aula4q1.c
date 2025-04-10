@@ -1,25 +1,24 @@
 #include <stdio.h>
 
-int main(){
+    int main(){
 
-    int f=1;      // fatorial support
-    int n = 0;    // factorial number
-    int inp = 0;  // unmodified start value
+        int factorialCounter=1;  // counter for factorial iterations
+        int factorialNumber = 0; // factorial value for iteration and calculation
+        int factorialInput = 0;  // saves value input by user
 
-    //catch data?
-    printf("please insert factorial number:");
-    scanf("%d", &n);
+        printf("please insert factorial number");
+        scanf("%d", &factorialNumber);
+        
+        factorialCounter = factorialNumber;
+        factorialInput = factorialNumber;
 
-    f = n;
-    inp = n;
+        while (factorialCounter > 1) {
+            factorialNumber *= factorialCounter-1;
+            factorialCounter--;
+        }
 
-    while (f > 1) {
-        n*=f-1;
-        f--;
+        printf("the factorial of %d is:\n%d", factorialInput, factorialNumber);
+
+        return 0;
+
     }
-
-    printf("O fatorial de %d eh: %d", inp, n);
-
-    return 0;
-
-}

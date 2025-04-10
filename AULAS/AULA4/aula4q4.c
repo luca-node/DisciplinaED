@@ -2,36 +2,32 @@
 
 int main(){
 
-    char option='i';
+    char option = 'i';
 
     do {
-        printf("Voce gostaria de continuar? (S/N)");
-        scanf("%c%*c", &option);
+            printf("Would you like to continue? (Y/N)");
+            scanf("%c%*c", &option);
 
-    } while (option != 's' && option != 'S' && option != 'n' && option != 'N');
+    } while (option != 'y' && option != 'Y' && option != 'n' && option != 'N');
 
-    switch (option) {
+    switch(option){
 
-        case 's':
-        case 'S':
-            printf("User has decided to continue.");
+        case 'y':
+        case 'Y':
+            printf("user has decided to continue.");
             break;
-
+        
         case 'n':
         case 'N':
-            printf("User has decided to stop.");
-            
+            printf("user has decided to stop.");
+            break;
 
         default:
-            printf("never getting here lol");
+            printf("invalid input and / or operation.");
+
+
     }
 
-    /*if (option == 'S' || option == 's') {
-        printf("User has decided to continue.");
-    } else if (option == 'N' || option == 'n') {
-        printf("User has decided to stop.");
-    }*/
-
     return 0;
-
+    
 }

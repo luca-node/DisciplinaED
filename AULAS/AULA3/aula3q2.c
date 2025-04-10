@@ -2,16 +2,15 @@
 
 int main(){
 
-    int n, n2;    // input numbers
-    int m;        // highest number
+    int number1, number2; // input variables for comparison
+    int hiNumber;         // highest number
 
-    //catch data?
-    printf("please insert numbers:");
-    scanf("%d%d", &n, &n2);
+    printf("please insert two numbers for comparison:\n");
+    scanf("%d%d", &number1, &number2);
 
-    m = n > n2 ? n : n2 ;
+    hiNumber = number1>number2?number1:number2;
 
-    printf("the highest number is %d\n", m);
+    printf("the highest number is: \n%d", hiNumber);
 
     return 0;
 
