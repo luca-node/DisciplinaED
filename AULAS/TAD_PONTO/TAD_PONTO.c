@@ -1,5 +1,7 @@
 #include "TAD_PONTO.h"
 #include <stdlib.h>
+#include <math.h>
+#include <unistd.h>
 
 /* Função Cria
         ** Aloca e retorna um ponto com coordenadas (x,y).   
@@ -11,4 +13,44 @@
 
         return novo_ponto;
 
+    }
+
+    void pto_libera (Ponto* p){
+        free(p);
+
+    }
+
+    void pto_acessa (Ponto* p, float* x, float* y){
+        *x = p->x;
+        *y = p->y;
+    }
+
+    void pto_atribui (Ponto* p, float x, float y){
+        p->x = x;
+        p->y = y;
+    }
+
+    float pto_distancia (Ponto* p1, Ponto* p2){
+        float dx = p2->x - p1->x;
+        float dy = p2->y - p1->y;
+
+        return sqrt(dx*dx + dy*dy);
+
+    }
+
+    void reiniciar (){
+        printf("Retornando");
+        sleep (1);
+        printf(".");
+        sleep (1);
+        printf(".");
+        sleep (1);
+        printf(".");
+        system("cls");
+    }
+
+    void ifcnd (int a){
+        if (a =! 1){
+            printf("Você precisa definir o ponto pelo menos uma vez.");
+        }
     }
