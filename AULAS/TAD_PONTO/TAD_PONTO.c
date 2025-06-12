@@ -43,14 +43,14 @@
         printf("\n\nRetornando");
             for (int i = 0; i < 10 ; i++){
                 printf(".");
-                Sleep(200);
+                Sleep(225);
             }
         system("cls");
     }
 
     int pontodef (int a){
         if (a != 1){
-            printf("Você precisa definir o ponto pelo menos uma vez.");
+            printf("Nao existe um ponto definido.");
             return 0;
         }
         

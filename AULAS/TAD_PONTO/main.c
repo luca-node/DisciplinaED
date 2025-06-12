@@ -21,6 +21,7 @@ int main(){
                 scanf("%f%f", &a, &b);
                 Ponto* p1 = pto_cria(a, b);
                 cnd = 1; // variavel booleana que indica se o ponto foi definido ou nao
+                printf("Ponto criado com sucesso.\n");
                 reiniciar(); // imprime mensagem de retorno e limpa a tela
                 break;
             
@@ -32,7 +33,7 @@ int main(){
                         continue; // volta para o inicio do while loop
                     }
 
-                printf("\nPonto liberado.\n");
+                printf("\nPonto liberado com sucesso.\n");
                 pto_libera(p1); // se existe um ponto definido, liberar a memória utilizada por ele
                 reiniciar();
                 cnd = 0; // zera variavel cnd, pois agora o ponto não existe mais
@@ -66,7 +67,8 @@ int main(){
                 float q = 0, w = 0;
                 printf("\nvalores antes de atribuir: %f     %f\n", p1->x, p1->y);
                 pto_atribui(p1, q, w);
-                printf("\nvalores depois de atribuir: %f    %f", p1->x, p1->y);
+                printf("\nvalores depois de atribuir: %f    %f\n\n", p1->x, p1->y);
+                printf("Ponto atribuido com sucesso.\n");
                 reiniciar();
                 break;
 
