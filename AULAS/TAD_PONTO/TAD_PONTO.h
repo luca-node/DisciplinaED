@@ -39,6 +39,10 @@
     ** Retorna a distância entre dois pontos 
     */
     float pto_distancia (Ponto* p1, Ponto* p2);
+
+    int pontodef (int a);
+
+    void reiniciar();
     
     #include "TAD_PONTO.c"
 #endif

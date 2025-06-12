@@ -1,4 +1,5 @@
 #include "TAD_PONTO.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <unistd.h>
@@ -39,18 +40,19 @@
     }
 
     void reiniciar (){
-        printf("Retornando");
-        sleep (1);
-        printf(".");
-        sleep (1);
-        printf(".");
-        sleep (1);
-        printf(".");
+        printf("\n\nRetornando");
+            for (int i = 0; i < 10 ; i++){
+                printf(".");
+                Sleep(200);
+            }
         system("cls");
     }
 
-    void ifcnd (int a){
-        if (a =! 1){
+    int pontodef (int a){
+        if (a != 1){
             printf("Você precisa definir o ponto pelo menos uma vez.");
+            return 0;
         }
+        
+        return 1;
     }
