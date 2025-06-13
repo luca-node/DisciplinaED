@@ -11,7 +11,7 @@ int main(){
     while (s != 0) {
     
     printf("Escolha uma opcao:\n\n");
-    printf("1) Criar ponto  2) Liberar Ponto 3) Acessar Ponto 4) Atribuir Ponto 5) Calcular Distancia 0) Sair 9) checar valor\n");
+    printf("1) Criar ponto  2) Liberar Ponto 3) Acessar Ponto 4) Atribuir Ponto 5) Calcular Distancia 6) checar valor 0) Sair\n");
     scanf("%d", &s);
 
         switch (s) {
@@ -51,7 +51,7 @@ int main(){
                 float* m;
                 float* n;
                 printf("teste");
-                pto_acessa(p1, m, n);
+                pto_acessa(p1, &m, &n);
                 
                 reiniciar();
                 continue;
@@ -92,7 +92,7 @@ int main(){
                 s = 0;
                 break;
 
-            case 9:
+            case 6:
                 printf("\nvalores sao:\n%f\n%f", p1->x, p1->y);
                 reiniciar();
                 break;

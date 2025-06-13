@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <unistd.h>
+#include <windows.h>
 
 /* Função Cria
         ** Aloca e retorna um ponto com coordenadas (x,y).   
