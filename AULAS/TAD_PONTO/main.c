@@ -89,10 +89,24 @@ int main(){
                 break;
                 
             case 0: // sair
+                printf("\n\nSaindo");
+                for (int i = 0; i < 10 ; i++){
+                    printf(".");
+                    Sleep(225);
+                }
+                
+                system("cls");
                 s = 0;
                 break;
 
             case 6:
+                sleep(1);
+                qq = pontodef(cnd); // checa se o ponto foi definido
+                if (qq == 0){
+                    reiniciar(); 
+                    continue; // volta para o inicio do while loop
+                }
+
                 printf("\nvalores sao:\n%f\n%f", p1->x, p1->y);
                 reiniciar();
                 break;
